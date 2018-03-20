@@ -1,0 +1,97 @@
+@(message: String, style: String = "scala")
+
+@import java.util.Date
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="top">
+  <div class="wrapper">
+    <h1><a href="https://playframework.com/documentation/@version/Home">@message</a></h1>
+  </div>
+</section>
+
+<div id="content" class="wrapper doc">
+<article>
+
+  <h1>Welcome to Lesly's blog</h1>
+
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <p>
+    <form action="@routes.HomeController.addNota()" method="post">
+      <input name = "name" type = "text">
+      <button>Save name post</button>
+    </form>
+  </p>
+
+  <p>
+    <form action="@routes.HomeController.addNota()" method="post">
+      <input name = "text" type = "text">
+      <button>Save text post</button>
+    </form>
+  </p>
+
+  <blockquote>
+    <p>
+      Today is @(new Date().format("dd-MM-yyyy"))
+    </p>
+  </blockquote>
+
+  <script src = '@routes.Assets.versioned("js/index.js")' type = 'text/javascript'></script>
+  <p>
+    <ul id = "notas"></ul>
+  </p>
+
+
+  <h2>19 de marzo...</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  <h2>12 de marzo...</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  <h2>6 de marzo...</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  <h2>2 de marzo...</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+
+</article>
+
+<aside>
+  <h3>Browse</h3>
+  <ul>
+    <li><a href="https://playframework.com/documentation/@version">Documentation</a></li>
+    <li><a href="https://playframework.com/documentation/@version/api/@style/index.html">Browse the @{style.capitalize} API</a></li>
+  </ul>
+  <h3>Start here</h3>
+  <ul>
+    <li><a href="https://playframework.com/documentation/@version/PlayConsole">Using the Play console</a></li>
+    <li><a href="https://playframework.com/documentation/@version/IDE">Setting up your preferred IDE</a></li>
+    <li><a href="https://playframework.com/download#examples">Example Projects</a>
+  </ul>
+  <h3>Help here</h3>
+  <ul>
+    <li><a href="https://stackoverflow.com/questions/tagged/playframework">Stack Overflow</a></li>
+    <li><a href="https://discuss.playframework.com">Discuss Play Forum</a> </li>
+    <li><a href="https://gitter.im/playframework/playframework">Gitter Channel</a></li>
+  </ul>
+  
+</aside>
+
+</div>
+}
