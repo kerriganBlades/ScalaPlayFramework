@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/heroku-staging-lesly
+web: target/universal/stage/bin/play-getting-started 
