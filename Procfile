@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/play-getting-started 
+web: target/universal/stage/bin/play-reactive-slick -Dhttp.port=${PORT}
