@@ -1,1 +1,1 @@
-ps:scale worker
+web: target/universal/stage/bin/heroku-staging-lesly
