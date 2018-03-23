@@ -1,1 +1,1 @@
-rake jobs:work
+ps:scale worker
